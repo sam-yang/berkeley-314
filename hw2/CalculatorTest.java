@@ -22,6 +22,16 @@ public class CalculatorTest {
     // TASK 1: WRITE JUNIT TESTS
     // YOUR CODE HERE
 
+    @Test
+    public void testStaffCalculator() {
+        int res1 = tester.add(1, 1);
+        int res2 = tester.add(0, 5);
+        int res3 = tester.add(-32, 3);
+        assertEquals(res1, 2);
+        assertEquals(res2, 5);
+        assertEquals(res3, -29);
+    }
+
     /* Run the unit tests in this file. */
     public static void main(String... args) {
         jh61b.junit.textui.runClasses(CalculatorTest.class);
