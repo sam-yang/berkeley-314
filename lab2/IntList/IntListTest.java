@@ -40,6 +40,30 @@ public class IntListTest {
     //TODO:  Create testSquareListRecursive()
     //TODO:  Create testDcatenate and testCatenate
 
+    @Test
+    public void testSquareListRecursive() {
+        IntList L = IntList.list(1, 2, 3);
+        IntList.squareListRecursive(L);
+        assertEquals(IntList.list(1, 2, 3), L);
+    }
+
+    @Test
+    public void testDCatenate() {
+        IntList A = IntList.list(1, 2, 3);
+        IntList B = IntList.list(4, 5, 6);
+        IntList C = IntList.dcatenate(A, B);
+        assertEquals(IntList.list(1, 2, 3, 4, 5, 6), A);
+        assertEquals(IntList.list(1, 2, 3, 4, 5, 6), C);
+    }
+
+    @Test
+    public void testCatenate() {
+        IntList A = IntList.list(1, 2, 3);
+        IntList B = IntList.list(4, 5, 6);
+        IntList C = IntList.catenate(A, B);
+        assertEquals(IntList.list(1, 2, 3), A);
+        assertEquals(IntList.list(1, 2, 3, 4, 5, 6), C);
+    }
     /* Run the unit tests in this file. */
     public static void main(String... args) {
         jh61b.junit.textui.runClasses(IntListTest.class);
