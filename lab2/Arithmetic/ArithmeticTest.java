@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+Wimport static org.junit.Assert.*;
 import org.junit.Test;
 
 public class ArithmeticTest {
